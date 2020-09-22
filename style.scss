@@ -314,3 +314,35 @@ img {
     }
   }
 }
+
+// features-intro
+.features-intro {
+  // min-height: 476px;
+  padding: 12rem 0 7rem;
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+    column-gap: 3.8rem;
+  }
+
+  &__item {
+    text-align: center;
+  }
+
+  &__img-container {
+    height: 7.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4.6rem;
+  }
+
+  &__heading {
+    margin-bottom: 2.4rem;
+  }
+
+  &__description {
+    max-width: 100%;
+  }
+}
