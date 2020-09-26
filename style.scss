@@ -222,6 +222,7 @@ img {
     border: none;
     background: none;
     display: none;
+    cursor: pointer;
 
     @include m-q(740px) {
       display: flex;
@@ -627,7 +628,7 @@ img {
 
       .navbar__nav-item:first-child {
         margin-left: 0;
-        
+
         .navbar__nav-link {
           padding-left: 0;
         }
