@@ -351,6 +351,30 @@ img {
         background-position: center;
       }
     }
+
+    &--pricing-page {
+      background: url(./images/pricing/desktop/hero.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+
+      @include m-q(990px) {
+        grid-column: 5/8;
+        background: url(./images/pricing/tablet/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+
+      @include m-q(740px) {
+        grid-row: 1/2;
+        grid-column: 1/2;
+        background: url(./images/pricing/mobile/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+      }
+    }
   }
 }
 
