@@ -247,6 +247,11 @@ img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
 
+    &--features-page,
+    &--pricing-page {
+      min-height: 490px;
+    }
+
     @include m-q(740px) {
       grid-template-columns: 1fr;
       grid-template-rows: 1fr 1fr;
@@ -329,18 +334,18 @@ img {
       background-position: center;
     }
 
-    &--stories-page {
+    &--features-page {
       background: url(./images/features/desktop/hero.jpg);
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: left;
 
       @include m-q(990px) {
         grid-column: 5/8;
         background: url(./images/features/tablet/hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top;
       }
 
       @include m-q(740px) {
@@ -349,7 +354,7 @@ img {
         background: url(./images/features/mobile/hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: left;
       }
     }
 
@@ -364,7 +369,7 @@ img {
         background: url(./images/pricing/tablet/hero.jpg);
         background-repeat: no-repeat;
         background-size: cover;
-        background-position: center;
+        background-position: top;
       }
 
       @include m-q(740px) {
@@ -1073,6 +1078,10 @@ img {
     font-size: 4rem;
     letter-spacing: 1px;
 
+    @include m-q(375px) {
+      font-size: 2.6rem;
+    }
+
     &--pro {
       color: get-color(white);
     }
@@ -1144,7 +1153,7 @@ img {
         .plans-comparison__feature:nth-child(3) {
           display: none;
         }
-        
+
         .plans-comparison__feature:nth-child(4) {
           display: none;
         }
