@@ -876,10 +876,11 @@ img {
 
   &__checkbox-wrapper {
     margin-bottom: 4rem;
+    text-align: center;
   }
 
   &__label {
-    display: flex;
+    display: inline-flex;
     justify-content: center;
     align-items: center;
     text-align: center;
