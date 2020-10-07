@@ -19,3 +19,11 @@ navTrigger.addEventListener("click", (e) => {
     openNav();
   }
 });
+
+
+// remove loader after all page load and show page content
+const spinnerWrapper = document.querySelector(".spinner-wrapper");
+window.addEventListener("load", () => {
+  spinnerWrapper.parentElement.removeChild(spinnerWrapper);
+  document.querySelector('.hidden').classList.add('show')
+});
